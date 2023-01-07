@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+:root{
+
+    --primary-color:#fff;
+    --secondary-color:#37B693;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    /* background-image: url('/images/bg.jpg'); */
+    background-color: #14141B;
+    color: var(--primary-color);
+    line-height: 1.6;
+    background-size: cover;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+h1, h2 {
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+p{
+    font-size: 20px;
+    margin: 10px 0;
+
+}
+
+span{
+    color: var(--secondary-color);
+}
+
+/* utilities */
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.btn{
+    display: inline-block;
+    padding: 25px 90px;
+    margin: 15px 0;
+    cursor: pointer;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.underline{
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--secondary-color);
+    color: var(--primary-color);
+}
+/* Text sizes */
+
+.lead{
+    font-size: 20px;
+}
+
+.sm{
+    font-size: 1rem;
+}
+
+.md{
+    font-size: 2rem;
+}
+
+.lg{
+    font-size: 3rem;
+}
+
+.xl{
+    font-size: 4rem;
+}
+.text-center{
+    text-align: center;
+}
+
+/* Background Color */
+
+.bg-primary{
+    background-color: var(--primary-color);
+}
+
+.bg-secondary{
+    background-color: var(--secondary-color);
+}
+
+/* Text Color */
+
+.text-primary{
+    color: var(--primary-color);
+}
+
+.text-secondary{
+    color: var(--secondary-color);
+}
+
+/* Navbar */
+
+.navbar{
+    padding-top: 10px;
+    background-color: #14141B;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar .flex{
+    justify-content: space-between;
+}
+
+.navbar ul{
+    display: flex;
+    gap: 50px;
+}
+
+.navbar a {
+    color: #fff;
+    padding: 10px 0;
+    margin: 0 5px;
+}
+
+.navbar a:hover {
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/* Head */
+
+.head{
+    margin-top: 160px;
+    margin-bottom: 100px;
+}
+
+.text-box{
+    max-width: 1000px;
+}
+
+.head h1{
+    line-height: 1.4;
+}
+
+.head p{
+    margin: 20px 0;
+}
+
+/* Arrow */
+
+.arrow-section{
+    margin: 40px 0;
+}
+.arrow {
+    border: solid var(--primary-color);
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 10px;
+  }
+
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+  /* Skills */
+
+  .skills{
+    margin: 100px 0;
+  }
+
+  .skills .grid img{
+    justify-self:flex-end;
+  }
+
+
+/* Discussion */
+
+  .discussion .grid{
+    grid-template-columns: 60% 40%;
+    gap: 0;
+  }
+
+  .discussion img{
+    width: 110%;
+  }
+
+  .discussion .flex{
+    margin: 70px 0;
+    margin-left: 70px;
+    gap: 30px;
+  }
+
+  .discussion .flex h3:first-child{
+    margin-bottom: 5px;
+  }
+
+  .discussion .flex i{
+    margin-top: 10px;
+    align-self: start;
+  }
+
+  /* Projects */
+
+  .projects{
+    padding: 160px 0;
+  }
+
+  .projects .grid{
+    gap: 0;
+    background-color: #1D1D25;
+    justify-items: center;
+  }
+
+  .projects img{
+    width: 100%;
+    
+  }
+
+  .projects .btn{
+    padding:15px 70px;
+  }
+
+  /* Contact */
+
+  .contact{
+    margin: 80px;
+  }
+
+  .contact .grid{
+    height: 600px;
+  }
+
+  .contact .flex{
+    width: 80%;
+    gap: 20px;
+  }
+
+  .grid-row{
+    display: grid;
+    grid-template-rows: 20% 60% 20%;
+    justify-items:center;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+  }
+
+.contact button{
+    cursor: pointer;
+    background: none;
+    border: 1px solid var(--secondary-color);
+    color: var(--primary-color);
+    width: 400px;
+    height: 60px;
+}
+
+.contact input{
+    width: 190px;
+    height: 40px;
+}
+
+.contact textarea{
+    width: 400px;
+    height: 260px;
+    resize: none;
+}
+
+.contact h4{
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+.contact input,
+.contact textarea{
+    background-color: #35353C;
+    color: var(--primary-color);
+    border: 2px solid #545356;
+}
+
+.contact input:focus,
+.contact textarea:focus{
+    
+    outline: none;
+}
+
+#project{
+    animation: forwards;
+}
